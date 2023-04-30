@@ -20,7 +20,6 @@ HELP.md
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
 /build/
@@ -29,5 +28,4 @@ HELP.md
 .vscode/
 /bin/
 /node_modules/
-
 .idea/workspace.xml
