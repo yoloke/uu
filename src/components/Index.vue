@@ -6,9 +6,9 @@
       </el-carousel-item>
     </el-carousel>
     <div class="solve head-label">
-      <div style="text-align: center;" class="font_size_24">
+      <!-- <div style="text-align: center;" class="font_size_24">
         一站式解决方案
-      </div>
+      </div> -->
     </div>
     <!-- 盒子 -->
     <div class="border_parent">
@@ -199,7 +199,7 @@
     <!-- 合作伙伴-->
     <div id="合作伙伴" class="cooperation head-label">
       <div style="text-align: center;" class="font_size_24">
-        合作伙伴
+        预期合作伙伴
       </div>
     </div>
     <div class="cooperation_parent">
@@ -208,14 +208,28 @@
           style="height: 90px;width: 90px"
           src="../../static/other/新区便民服务中心-品牌logo.jpg"
         />
-        <div>新区便利服务中心</div>
+        <div>餐饮行业</div>
       </div>
       <div style="margin: 0 20px; text-align: center">
         <img
           style="height: 90px;width: 90px;border-radius: 50%;"
           src="../../static/other/勇丽调味-品牌logo.jpg"
         />
-        <div>勇丽调味商行</div>
+        <div>船舶运输</div>
+      </div>
+       <div style="margin: 0 20px; text-align: center">
+        <img
+          style="height: 90px;width: 90px;border-radius: 50%;"
+          src="../../static/other/勇丽调味-品牌logo.jpg"
+        />
+        <div>原油开采</div>
+      </div>
+       <div style="margin: 0 20px; text-align: center">
+        <img
+          style="height: 90px;width: 90px;border-radius: 50%;"
+          src="../../static/other/勇丽调味-品牌logo.jpg"
+        />
+        <div>污水处理行业</div>
       </div>
     </div>
     <!-- 关于我们-->
@@ -248,8 +262,8 @@ export default {
         },
         {
           img: require("../../static/other/店铺管理.png"),
-          title: "店铺管理",
-          content: ["店铺模板切换", "店铺商品上架"],
+          title: "公司管理",
+          content: [ "公司运营","公司商品上架"],
         },
         {
           img: require("../../static/other/数据分析.png"),
@@ -264,7 +278,7 @@ export default {
         {
           img: require("../../static/other/品牌渠道.png"),
           title: "品牌渠道",
-          content: ["打造店铺自主品牌", "品牌多样化管理"],
+          content: ["打造公司自主品牌", "品牌多样化管理"],
         },
       ],
       products: [
@@ -299,30 +313,30 @@ export default {
         product: [
           {
             img: require("../../static/other/手指.png"),
-            title: "一键建铺",
-            contents: ["注册一键创建店铺", "开启您的专属店铺"],
+            title: "制备简单，成本低",
+            contents: [""],
           },
           {
             img: require("../../static/other/店铺管理.png"),
-            title: "店铺装扮",
-            contents: ["不同业态打造不同风格", "给用户流畅的视觉体验"],
+            title: "废物再利用",
+            contents: [""],
           },
           {
             img: require("../../static/other/数据分析.png"),
-            title: "营销分析",
-            contents: ["多玩法提升品牌知名度", "优惠福利刺激付费转化"],
+            title: "耐油污的污染",
+            contents: [""],
           },
           {
             img: require("../../static/other/助力零售.png"),
-            title: "助力零售",
-            contents: ["提供专业产品服务", "帮助线下零售业态提升营销"],
+            title: "高效的油水分离性能",
+            contents: [""],
           },
         ],
       },
       company: [
-        "企业从事于：互联网整合营销，互联网软件开发，微信公众号，小程序，微商城开发，提供技术支持，是所创业型服务研发公司。",
-        "核心理念：打造移动电子商务平台 ，提供一键式部署，实现简单可靠稳定的商务平台。",
-        "团队作风：我们来自不同地区，因梦想相聚，组建团队，每个团队成员如同人的五官，缺一不可。",
+        "积极响应国家号召，建设绿色环保家园，为环保事业做出贡献，为油污水处理问题提供更优的解决方案。",
+        "对传统膜材料进行改性优化，解决其制备工艺复杂、过滤效率低、成本高等问题。",
+        "提高废茶渣的利用率，实现环保效益和经济效益的双丰收。",
         "企业精神：以实力为盾，自信为矛。我们坚信成功靠朋友，成长靠对手，成就靠团体。",
       ],
       carousel_height: "550px",

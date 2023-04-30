@@ -9,8 +9,8 @@
                 </div>
                 <div style="display:flex; float:left; height: 65px;">
                     <div class="header-important">
-                        <div class="company_name">坚冰信息科技</div>
-                        <div class="header-title company_name">fastice-tech.com</div>
+                        <div class="company_name">广州瑞保膜科技</div>
+                        <div class="header-title company_name">baucd.gitee.io</div>
                     </div>
                 </div>
             </div>
@@ -55,23 +55,7 @@
             <div style="height:1px;padding:0;background-color:#999;">
             </div>
         </div>
-        <div style="width: 90%;margin: 20px auto;">
-            <el-row :gutter="20">
-                <el-col :xs="24" :sm="12">
-                    <p class="footer_font">邮箱：jb_technology@163.com</p>
-                    <div style="margin: auto;" class="footer_font">
-                        互联网ICP备案：鄂ICP备19029919号-1
-                    </div>
-                    <div style="margin: auto;" class="footer_font">
-                        ©fastice-tech.com 襄阳坚冰信息科技有限公司版权所有
-                    </div>
-                </el-col>
-                <el-col :xs="24" :sm="12">
-                    <div><img :src="company.qrcode" style="width: 100px;height: 100px;border: 0"/></div>
-                    <div class="footer_font">关注坚冰商务公众号</div>
-                </el-col>
-            </el-row>
-        </div>
+    
         <div id="back_to_top" ref="btn" @click="backTop" style="display: none;">
             <p style="font-size: 0.625em; font-weight: bold">TOP</p>
             <img src="../assets/other/launch.png" style="height: 45px;width: 35px" />
@@ -177,10 +161,10 @@
                 }, 30)
             },
             login(){
-                window.open('https://admin.fastice-tech.com/login')
+                window.open('http://baucd.gitee.io/project-official-website/#/')
             },
             register(){
-                window.open('https://admin.fastice-tech.com/registe')
+                window.open('http://baucd.gitee.io/project-official-website/#/')
             },
             menuSeen(){
                 // 屏幕尺寸
