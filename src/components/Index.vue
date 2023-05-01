@@ -64,7 +64,7 @@
 
     <div class="product_pc" style="display: flex; justify-content: center;">
       <video ref="videoPlayer" controls style="width: 80%; ">
-        <source src="../../static/demo.mp4" type="video/mp4" />
+        <source src="../../static/demo.mov" type="video/mp4" />
       </video>
     </div>
     <!-- 后台管理 -->
