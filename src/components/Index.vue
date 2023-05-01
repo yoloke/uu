@@ -62,19 +62,14 @@
       </div>
     </div>
 
-    <div
-      class="product_pc"
-      style="display: flex; justify-content: center; height: 800px;"
-    >
-      <video ref="videoPlayer" controls style="width: 80%; height: 100%;">
-        <source src="../assets/demo.mp4" type="video/mp4" />
+    <div class="product_pc" style="display: flex; justify-content: center;">
+      <video ref="videoPlayer" controls style="width: 80%; ">
+        <source src="../../static/demo.mp4" type="video/mp4" />
       </video>
     </div>
     <!-- 后台管理 -->
     <div class="product_pc" style="display: flex; justify-content: center;">
-      <el-row style="display: flex; justify-content: center;">
-        <img :src="manages[0].img[0]" class="product_pc_img" />
-      </el-row>
+      <img :src="manages[0].img[0]" class="dd" />
     </div>
     <!-- 产品特点-->
     <div id="产品特点" class="product_spec_title head-label">
@@ -296,8 +291,7 @@ export default {
       },
       company: [
         "积极响应国家号召，建设绿色环保家园，为环保事业做出贡献，为油污水处理问题提供更优的解决方案。",
-        "对传统膜材料进行改性优化，解决其制备工艺复杂、过滤效率低、成本高等问题。",
-        "提高废茶渣的利用率，实现环保效益和经济效益的双丰收。",
+        "对传统膜材料进行改性优化，解决其制备工艺复杂、过滤效率低、成本高等问题。提高废茶渣的利用率，实现环保效益和经济效益的双丰收。",
         "企业精神：以实力为盾，自信为矛。我们坚信成功靠朋友，成长靠对手，成就靠团体。",
       ],
       carousel_height: "550px",
@@ -412,6 +406,9 @@ export default {
 
 .product_pc_img {
   width: 100%;
+}
+.dd {
+  width: 80%;
 }
 
 .product_pc_img_div {
