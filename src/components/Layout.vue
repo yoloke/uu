@@ -44,8 +44,8 @@
                 </el-menu>
             </div>
             <div v-if="seen" style="float: right; display: flex;align-items: center; height: 100%;">
-                <el-button type="text" style="margin-right: 20px;" class="header-title" @click="login">登录</el-button>
-                <el-button type="primary" class="header-title" @click="register" round>注册</el-button>
+                <el-button type="text" style="margin-right: 20px;" class="header-title">登录</el-button>
+                <el-button type="primary" class="header-title">注册</el-button>
             </div>
         </div>
         <div class="container" style="clear: both;">
@@ -88,10 +88,12 @@
                         window.location.hash = "#产品微观";
                         break;
                     case '2-2':
-                        this.$router.push({name: "Fruit"});
+                         
+                        window.location.hash = "#产品特点";
                         break;
                     case '2-3':
-                        this.$router.push({name: "Fashion"});
+                      
+                        window.location.hash = "#产品特点";
                         break;
                     case '3':
                         this.$router.push({name: "Index"});
@@ -118,13 +120,8 @@
                         window.location.hash = "#产品微观";
                         this.currentMenu='首页';
                         break;
-                    case '2-2':
-                        this.$router.push({name: "Fruit"});
-                        this.currentMenu='生鲜果蔬';
-                        break;
-                    case '2-3':
-                        this.$router.push({name: "Fashion"});
-                        break;
+                   
+            
                     case '3':
                         this.$router.push({name: "Index"});
                         window.location.hash = "#产品特点";
