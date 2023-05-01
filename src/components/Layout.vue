@@ -19,11 +19,12 @@
                 <el-menu v-if="seen" :default-active="activeIndex" class="el-menu-demo" menu-trigger="click" text-color="#333" style="height: 65px; border:0;" mode="horizontal" @select="handleSelect">
                     <el-menu-item index="1" class="header-title">首页</el-menu-item>
                     <el-submenu index="2">
-                        <template slot="title">产品与解决方案</template>
-                        <el-menu-item index="2-1">产品微观</el-menu-item>
-                        <el-menu-item index="2-2">生鲜果蔬</el-menu-item>
-                        <el-menu-item index="2-3" disabled>服装品牌</el-menu-item>
-                        <el-menu-item index="2-4" disabled>微商城小程序</el-menu-item>
+                        
+                        <template slot="title"><span style="font-size: 1rem;">产品与解决方案</span></template>
+                        <el-menu-item index="2-1" >产品功能</el-menu-item>
+                        <el-menu-item index="2-2" >产品特点</el-menu-item>
+                        <el-menu-item index="2-3" >产品优势</el-menu-item>
+                        <el-menu-item index="2-4" >产品价值</el-menu-item>
                     </el-submenu>
                     <el-menu-item index="3" class="header-title">产品特点</el-menu-item>
                     <el-menu-item index="4" class="header-title">合作伙伴</el-menu-item>
@@ -52,10 +53,9 @@
         </div>
 
         <div style="width: 90%;margin: 20px auto;">
-            <div style="height:1px;padding:0;background-color:#999;">
+            <div style="height:1px;padding:0;">
             </div>
         </div>
-    
         <div id="back_to_top" ref="btn" @click="backTop" style="display: none;">
             <p style="font-size: 0.625em; font-weight: bold">TOP</p>
             <img src="../assets/other/launch.png" style="height: 45px;width: 35px" />
@@ -161,10 +161,10 @@
                 }, 30)
             },
             login(){
-                window.open('http://baucd.gitee.io/project-official-website/#/')
+                window.open('https://admin.fastice-tech.com/login')
             },
             register(){
-                window.open('http://baucd.gitee.io/project-official-website/#/')
+                window.open('https://admin.fastice-tech.com/registe')
             },
             menuSeen(){
                 // 屏幕尺寸
@@ -188,6 +188,9 @@
 </script>
 
 <style scoped>
+.dd{
+    font-size: 1rem!important;
+}
     .logo_img{
         float:left;
         width: 30%;

@@ -61,58 +61,19 @@
         产品微观介绍
       </div>
     </div>
-    <div class="product_mobile">
-      <el-row>
-        <el-col :xs="24" :sm="12">
-          <div class="product_mobile_content">
-            <div class="product_mobile_title font_size_30">
-              {{ products[0].title }}
-            </div>
-            <div class="product_font_style product_mobile_content_one">
-              {{ products[0].content[0] }}
-            </div>
-            <div class="product_font_style product_mobile_content_two">
-              {{ products[0].content[1] }}
-            </div>
-            <div class="product_font_style product_mobile_content_two">
-              {{ products[0].content[2] }}
-            </div>
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12">
-          <img :src="products[0].img[0]" class="product_mobile_img" />
-          <img :src="products[0].img[1]" class="product_mobile_img" />
-        </el-col>
-      </el-row>
+
+    <div
+      class="product_pc"
+      style="display: flex; justify-content: center; height: 800px;"
+    >
+      <video ref="videoPlayer" controls style="width: 80%; height: 100%;">
+        <source src="../assets/demo.mp4" type="video/mp4" />
+      </video>
     </div>
     <!-- 后台管理 -->
-    <div class="product_pc">
-      <el-row>
-        <el-col :xs="24" :sm="12">
-          <div class="product_pc_one">
-            <div class="product_mobile_title font_size_30">
-              {{ manages[0].title }}
-            </div>
-            <div style="margin-top: 20px" class="product_font_style">
-              {{ manages[0].content[0] }}
-            </div>
-            <div style="margin-top: 10px" class="product_font_style">
-              {{ manages[0].content[1] }}
-            </div>
-            <div style="margin-top: 10px" class="product_font_style">
-              {{ manages[0].content[2] }}
-            </div>
-            <div style="margin-top: 10px" class="product_font_style">
-              {{ manages[0].content[3] }}
-            </div>
-            <div style="margin-top: 10px" class="product_font_style">
-              {{ manages[0].content[4] }}
-            </div>
-          </div>
-        </el-col>
-        <el-col :xs="24" :sm="12">
-          <img :src="manages[0].img[0]" class="product_pc_img" />
-        </el-col>
+    <div class="product_pc" style="display: flex; justify-content: center;">
+      <el-row style="display: flex; justify-content: center;">
+        <img :src="manages[0].img[0]" class="product_pc_img" />
       </el-row>
     </div>
     <!-- 产品特点-->
@@ -205,29 +166,29 @@
     <div class="cooperation_parent">
       <div style="margin: 0 20px; text-align: center">
         <img
-          style="height: 90px;width: 90px"
-          src="../../static/other/新区便民服务中心-品牌logo.jpg"
+          style="height: 90px;width: 90px;border-radius: 50%;"
+          src="../../static/other/餐饮行业.png"
         />
         <div>餐饮行业</div>
       </div>
       <div style="margin: 0 20px; text-align: center">
         <img
           style="height: 90px;width: 90px;border-radius: 50%;"
-          src="../../static/other/勇丽调味-品牌logo.jpg"
+          src="../../static/other/船舶运输.png"
         />
         <div>船舶运输</div>
       </div>
-       <div style="margin: 0 20px; text-align: center">
+      <div style="margin: 0 20px; text-align: center">
         <img
           style="height: 90px;width: 90px;border-radius: 50%;"
-          src="../../static/other/勇丽调味-品牌logo.jpg"
+          src="../../static/other/原油开采.png"
         />
         <div>原油开采</div>
       </div>
-       <div style="margin: 0 20px; text-align: center">
+      <div style="margin: 0 20px; text-align: center">
         <img
           style="height: 90px;width: 90px;border-radius: 50%;"
-          src="../../static/other/勇丽调味-品牌logo.jpg"
+          src="../../static/other/污水处理行业.png"
         />
         <div>污水处理行业</div>
       </div>
@@ -263,7 +224,7 @@ export default {
         {
           img: require("../../static/other/店铺管理.png"),
           title: "公司管理",
-          content: [ "公司运营","公司商品上架"],
+          content: ["公司运营", "公司商品上架"],
         },
         {
           img: require("../../static/other/数据分析.png"),
